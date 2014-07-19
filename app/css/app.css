@@ -573,6 +573,7 @@ div .main-heading {
 }
 
 body {
+    overflow:hidden;
     padding-top: 20px;
     width: 100%;
     height: 100%;
@@ -580,6 +581,7 @@ body {
     font-weight: 300;
     color: #fff;
     background-image: url(../img/bg-dark.jpg);
+    background-size: cover;
 }
 
 html {
