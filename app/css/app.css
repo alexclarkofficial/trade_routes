@@ -310,6 +310,21 @@ header{
   left: 0;
 }
 
+.main {
+  width: 80%;
+  height: 400px;
+  background: rgba(0,0,0,0.5);
+  padding: 20px 0;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 80px;
+  top: 150px;
+  left: 0;
+  bottom: 0;
+}
+
 .bar_personal{
   width: 100%;
   background: rgba(0,0,0,0.5);
