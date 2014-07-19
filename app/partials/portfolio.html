@@ -1,0 +1,89 @@
+<div class="container-fluid">
+
+<div class="home-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <div class="section-heading">
+        <h2>Education Technology</h2>
+        <i class="fa fa-2x fa-angle-down"></i>
+        <p>Ryan helped kickstart the <a href="http://www.edtechtimes.com">EdTechTimes</a> video profile series called EdTechKnowFiles that gives an insider scoop of educational technology companies and their founders. See below for some examples of the education technology companies that were profiled!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="slider" class="container">
+  <div>
+    <videogular
+      vg-player-ready="onPlayerReady" vg-complete="onCompleteVideo" vg-update-time="onUpdateTime" vg-update-size="onUpdateSize" vg-update-volume="onUpdateVolume" vg-update-state="onUpdateState"
+      vg-width="config.width" vg-height="config.height" vg-theme="config.theme.url" vg-autoplay="config.autoPlay" vg-stretch="config.stretch.value" vg-responsive="true">
+      <video vg-src="config.sources" preload='metadata'></video>
+      <vg-youtube></vg-youtube>
+      <vg-poster-image vg-url='config.plugins.poster.url' vg-stretch="config.stretch.value"></vg-poster-image>
+      <vg-buffering></vg-buffering>
+      <vg-overlay-play vg-play-icon="config.theme.playIcon"></vg-overlay-play>
+
+      <vg-controls vg-autohide="config.autoHide" vg-autohide-time="config.autoHideTime" style="height: 50px;">
+        <vg-play-pause-button></vg-play-pause-button>
+        <vg-timeDisplay>{{ currentTime }}</vg-timeDisplay>
+        <vg-scrubBar>
+          <vg-scrubbarcurrenttime></vg-scrubbarcurrenttime>
+        </vg-scrubBar>
+        <vg-timeDisplay>{{ totalTime }}</vg-timeDisplay>
+        <vg-volume>
+          <vg-mutebutton></vg-mutebutton>
+          <vg-volumebar></vg-volumebar>
+        </vg-volume>
+        <vg-fullscreenButton vg-enter-full-screen-icon="config.theme.enterFullScreenIcon" vg-exit-full-screen-icon="config.theme.exitFullScreenIcon"></vg-fullscreenButton>
+      </vg-controls>
+    </videogular>
+  </div>
+  <div>
+    <videogular
+      vg-player-ready="onPlayerReady" vg-complete="onCompleteVideo" vg-update-time="onUpdateTime" vg-update-size="onUpdateSize" vg-update-volume="onUpdateVolume" vg-update-state="onUpdateState"
+      vg-width="config.width" vg-height="config.height" vg-theme="config.theme.url" vg-autoplay="config.autoPlay" vg-stretch="config.stretch.value" vg-responsive="true">
+      <video vg-src="config.sources" preload='metadata'></video>
+      <vg-youtube></vg-youtube>
+      <vg-poster-image vg-url='config.plugins.poster.url' vg-stretch="config.stretch.value"></vg-poster-image>
+      <vg-buffering></vg-buffering>
+      <vg-overlay-play vg-play-icon="config.theme.playIcon"></vg-overlay-play>
+
+      <vg-controls vg-autohide="config.autoHide" vg-autohide-time="config.autoHideTime" style="height: 50px;">
+        <vg-play-pause-button></vg-play-pause-button>
+        <vg-timeDisplay>{{ currentTime }}</vg-timeDisplay>
+        <vg-scrubBar>
+          <vg-scrubbarcurrenttime></vg-scrubbarcurrenttime>
+        </vg-scrubBar>
+        <vg-timeDisplay>{{ totalTime }}</vg-timeDisplay>
+        <vg-volume>
+          <vg-mutebutton></vg-mutebutton>
+          <vg-volumebar></vg-volumebar>
+        </vg-volume>
+        <vg-fullscreenButton vg-enter-full-screen-icon="config.theme.enterFullScreenIcon" vg-exit-full-screen-icon="config.theme.exitFullScreenIcon"></vg-fullscreenButton>
+      </vg-controls>
+    </videogular>
+  </div>
+</div>
+
+
+<div class="container">
+  <div id="portfolio-slider" class="owl-carousel owl-theme">
+    <div class="portfolio-video">
+        <p>Founders of the Delta Project</p>
+    </div>
+    <div class="portfolio-video">
+        <video id="vid2" src="" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360" data-setup='{ "techOrder": ["youtube"], "src": "http://www.youtube.com/embed/lc2_B82UrWQ" }'>
+        </video>
+        <p>Founder of FrontRow Classroom</p>
+    </div>
+    <div class="portfolio-video">
+        <video id="vid3" src="" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360" data-setup='{ "techOrder": ["youtube"], "src": "http://www.youtube.com/embed/EL7hq2j3tCQ" }'>
+        </video>
+        <p>Founder of Reading Plus</p>
+    </div>
+  </div>
+</div>
+
+
+</div>
