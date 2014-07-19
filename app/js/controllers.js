@@ -5,7 +5,7 @@
 var mainCtrl = angular.module('mainCtrl', []);
 
 mainCtrl.controller('HomeCtrl', ['$scope','tradeRouteMap',function($scope,tradeRoute){
-    tradeRoute._init($scope);
+
 }]);
 
 
@@ -32,9 +32,9 @@ mainCtrl.controller('NavigationCtrl', function($scope, $route, $location){
 	};
 });
 
-mainCtrl.controller('AboutCtrl', function($scope, $window){
-
-});
+mainCtrl.controller('AboutCtrl', ['$scope','$window','tradeRouteMap',function($scope, $window, tradeRoute){
+    tradeRoute._init($scope);
+}]);
 
 mainCtrl.controller('ProjectsCtrl', function($scope){
 	// $(function() {
