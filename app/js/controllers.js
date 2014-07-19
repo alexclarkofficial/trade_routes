@@ -4,9 +4,9 @@
 
 var mainCtrl = angular.module('mainCtrl', []);
 
-mainCtrl.controller('HomeCtrl', function($scope){
-
-});
+mainCtrl.controller('HomeCtrl', ['$scope','tradeRouteMap',function($scope,tradeRoute){
+    tradeRoute._init($scope);
+}]);
 
 
 mainCtrl.controller('NavigationCtrl', function($scope, $route, $location){
@@ -242,4 +242,43 @@ mainCtrl.controller('BlogCtrl', function($scope){
 
 
 
+});
+
+mainCtrl.factory('tradeRouteMap',function(){
+    return {
+	_init:function($scope){
+	    var mapOptions = {
+		zoom: 3,
+		center: new google.maps.LatLng(0, -180),
+		mapTypeId: google.maps.MapTypeId.TERRAIN
+            };
+	    
+            var myLatlng = new google.maps.LatLng(21.291982, -157.821856);
+	    
+            var map = new google.maps.Map($("#map")[0],mapOptions);
+	    
+            var marker = new google.maps.Marker({
+		position: myLatlng,
+		map: map,
+		title:"Hello World!"
+            });
+	    
+            var flightPlanCoordinates = [
+		new google.maps.LatLng(37.772323, -122.214897),
+		new google.maps.LatLng(21.291982, -157.821856),
+		new google.maps.LatLng(-18.142599, 178.431),
+		new google.maps.LatLng(-27.46758, 153.027892)
+            ];
+            var flightPath = new google.maps.Polyline({
+		path: flightPlanCoordinates,
+		geodesic: true,
+		strokeColor: '#FF0000',
+		strokeOpacity: 1.0,
+		strokeWeight: 2
+            });
+	    
+            flightPath.setMap(map);
+            marker.setMap(map);
+	}
+    };
 });
