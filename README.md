@@ -1,5 +1,7 @@
 # AngularJS Phone Catalog Tutorial Application
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/alexclarkofficial/trade_routes.svg)](https://greenkeeper.io/)
+
 ## Overview
 
 This application takes the developer through the process of building a web-application using
